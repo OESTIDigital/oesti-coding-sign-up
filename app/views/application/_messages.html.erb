@@ -1,0 +1,11 @@
+<% if flash[:notice] %>
+    <div class="alert alert-success" role="alert"><%= flash[:notice] %></div>
+<% end %>
+
+<% if defined?(errors) && errors.any? %>
+	<div class="alert alert-danger">
+	  <% errors.full_messages.each do |message| %>
+	    <%= message %><br>
+	  <% end %>
+	</div>
+<% end %>

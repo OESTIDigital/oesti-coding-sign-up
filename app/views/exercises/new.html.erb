@@ -1,0 +1,7 @@
+<h1><%= I18n.t('actions.new') + ' ' + Exercise.model_name.human %></h1>
+
+<%= render 'form', exercise: @exercise %>
+
+<br>
+
+<%= link_to I18n.t('actions.back'), exercises_path, class: 'btn btn-default' %>

@@ -1,0 +1,30 @@
+pt-BR:
+  actions:
+    new: 'Novo'
+    show: 'Exibir'
+    edit: 'Alterar'
+    destroy: 'Excluir'
+    save: 'Salvar'
+    back: 'Voltar'
+
+  messages:
+    are_you_sure: 'Tem certeza?'
+    create_success: 'criado com sucesso.'
+    update_success: 'alterado com sucesso.'
+    destroy_success: 'excluído com sucesso.'
+      
+  helpers:
+    label:
+      exercise:
+        title: 'Título'
+        text: 'Texto'
+
+  activerecord:
+    models:
+      exercise:
+        one: 'Exercício'
+        other: 'Exercícios'
+    attributes:
+      exercise:
+        title: 'Título'
+        text: 'Texto'

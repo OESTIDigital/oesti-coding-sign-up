@@ -1,0 +1,33 @@
+<h1><%= Exercise.model_name.human(count: 2) %></h1>
+
+<%= render 'application/messages' %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th><%= I18n.t('helpers.label.exercise.title') %></th>
+      <th><%= I18n.t('helpers.label.exercise.text') %></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @exercises.each do |exercise| %>
+      <tr>
+        <td><%= exercise.title %></td>
+        <td><%= exercise.text %></td>
+        <td>
+          <div class="btn-group">
+            <%= link_to I18n.t('actions.show'), exercise, class: 'btn btn-small btn-default' %>
+            <%= link_to I18n.t('actions.edit'), edit_exercise_path(exercise), class: 'btn btn-small btn-default' %>
+            <%= link_to I18n.t('actions.destroy'), exercise, method: :delete, class: 'btn btn-small btn-danger', data: { confirm: I18n.t('messages.are_you_sure') } %>
+          </div>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to I18n.t('actions.new') + ' ' + Exercise.model_name.human, new_exercise_path, class: 'btn btn-default' %>

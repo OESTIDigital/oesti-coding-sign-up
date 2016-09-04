@@ -9,6 +9,10 @@
   </head>
 
   <body>
-    <%= yield %>
+  	<%= nav_bar brand: "OESTI Digital", brand_link: root_url %>
+  	
+  	<div class="container">
+    	<%= yield %>
+    </div>
   </body>
 </html>
