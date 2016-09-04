@@ -6,12 +6,15 @@ pt-BR:
     destroy: 'Excluir'
     save: 'Salvar'
     back: 'Voltar'
+    new_model: 'Novo %{model}'
+    show_model: 'Exibir %{model}'
+    edit_model: 'Alterar %{model}'
 
   messages:
     are_you_sure: 'Tem certeza?'
-    create_success: 'criado com sucesso.'
-    update_success: 'alterado com sucesso.'
-    destroy_success: 'excluído com sucesso.'
+    create_success: '%{model} criado com sucesso.'
+    update_success: "%{model} alterado com sucesso."
+    destroy_success: '%{model} excluído com sucesso.'
       
   helpers:
     label:

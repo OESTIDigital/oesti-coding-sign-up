@@ -30,4 +30,6 @@
 
 <br>
 
-<%= link_to I18n.t('actions.new') + ' ' + Exercise.model_name.human, new_exercise_path, class: 'btn btn-default' %>
+<div class="well">
+  <%= link_to I18n.t('actions.new_model', :model => Exercise.model_name.human), new_exercise_path, class: 'btn btn-default' %>
+</div>

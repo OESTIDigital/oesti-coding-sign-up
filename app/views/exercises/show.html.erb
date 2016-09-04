@@ -1,4 +1,4 @@
-<h1><%= I18n.t('actions.show') + ' ' + Exercise.model_name.human %></h1>
+<h1><%= I18n.t('actions.show_model', :model => Exercise.model_name.human) %></h1>
 
 <%= render 'application/messages' %>
 
@@ -16,6 +16,7 @@
 
 <br>
 
-<%= link_to I18n.t('actions.edit'), edit_exercise_path(@exercise), class: 'btn btn-default' %>
-<br><br>
-<%= link_to I18n.t('actions.back'), exercises_path, class: 'btn btn-default' %>
+<div class="well">
+	<%= link_to I18n.t('actions.edit'), edit_exercise_path(@exercise), class: 'btn btn-default' %>
+	<%= link_to I18n.t('actions.back'), exercises_path, class: 'btn btn-default' %>
+</div>
