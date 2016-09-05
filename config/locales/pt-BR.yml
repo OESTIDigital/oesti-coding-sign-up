@@ -1,14 +1,12 @@
 pt-BR:
   actions:
+    list: 'Listar'
     new: 'Novo'
     show: 'Exibir'
     edit: 'Alterar'
     destroy: 'Excluir'
     save: 'Salvar'
     back: 'Voltar'
-    new_model: 'Novo %{model}'
-    show_model: 'Exibir %{model}'
-    edit_model: 'Alterar %{model}'
 
   messages:
     are_you_sure: 'Tem certeza?'

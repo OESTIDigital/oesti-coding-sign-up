@@ -1,5 +1,4 @@
-<h1><%= Exercise.model_name.human(count: 2) %></h1>
-
+<%= render 'page_header' %>
 <%= render 'application/messages' %>
 
 <table class="table">
@@ -7,7 +6,7 @@
     <tr>
       <th><%= I18n.t('helpers.label.exercise.title') %></th>
       <th><%= I18n.t('helpers.label.exercise.text') %></th>
-      <th></th>
+      <th class="actions"></th>
     </tr>
   </thead>
 
@@ -27,9 +26,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<div class="well">
-  <%= link_to I18n.t('actions.new_model', :model => Exercise.model_name.human), new_exercise_path, class: 'btn btn-default' %>
-</div>

@@ -1,10 +1,2 @@
-<h1><%= I18n.t('actions.edit_model', :model => Exercise.model_name.human) %></h1>
-
+<%= render 'page_header' %>
 <%= render 'form', exercise: @exercise %>
-
-<br>
-
-<div class="well">
-	<%= link_to I18n.t('actions.show'), @exercise, class: 'btn btn-default' %>
-	<%= link_to I18n.t('actions.back'), exercises_path, class: 'btn btn-default' %>
-</div>

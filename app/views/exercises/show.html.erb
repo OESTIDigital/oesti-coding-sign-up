@@ -1,5 +1,4 @@
-<h1><%= I18n.t('actions.show_model', :model => Exercise.model_name.human) %></h1>
-
+<%= render 'page_header' %>
 <%= render 'application/messages' %>
 
 <%= form_for(@exercise) do |f| %>
@@ -13,10 +12,3 @@
 	  <p class="form-control-static"><%= @exercise.text %></p>
 	</div>
 <% end %>
-
-<br>
-
-<div class="well">
-	<%= link_to I18n.t('actions.edit'), edit_exercise_path(@exercise), class: 'btn btn-default' %>
-	<%= link_to I18n.t('actions.back'), exercises_path, class: 'btn btn-default' %>
-</div>

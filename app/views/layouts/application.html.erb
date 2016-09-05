@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>OestiCodingSignUp</title>
+    <title>OESTI Digital</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,7 +9,15 @@
   </head>
 
   <body>
-  	<%= nav_bar brand: "OESTI Digital", brand_link: root_url %>
+    <nav class="navbar navbar-default" role="navigation">
+      <a class="navbar-brand" href="<%= root_url %>">
+        <b>OESTI</b> Digital
+      </a>
+
+      <ul class="nav navbar-nav">
+        <li id="dashboard-menu" class=""><a href="/dashboard">Dashboard</a></li>
+      </ul>
+    </nav>
   	
   	<div class="container">
     	<%= yield %>
