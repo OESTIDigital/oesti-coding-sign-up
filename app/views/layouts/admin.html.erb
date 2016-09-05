@@ -13,6 +13,16 @@
       <a class="navbar-brand" href="<%= root_url %>">
         <b>OESTI</b> Digital
       </a>
+
+      <ul class="nav navbar-nav">
+        <li>
+          <%= link_to Exercise.model_name.human(count: 2), exercises_path %>
+        </li>
+
+        <li>
+          <%= link_to User.model_name.human(count: 2), users_path %>
+        </li>
+      </ul>
     </nav>
   	
   	<div class="container">

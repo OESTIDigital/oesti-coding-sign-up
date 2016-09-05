@@ -1,0 +1,26 @@
+<%= render 'page_header' %>
+<%= render 'application/messages' %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th><%= I18n.t('helpers.label.user.name') %></th>
+      <th><%= I18n.t('helpers.label.user.email') %></th>
+      <th class="actions"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+        <td>
+          <%= link_to I18n.t('actions.show'), user, class: 'btn btn-small btn-default' %>
+          <%= link_to I18n.t('actions.edit'), edit_user_path(user), class: 'btn btn-small btn-default' %>
+          <%= link_to I18n.t('actions.destroy'), user, method: :delete, class: 'btn btn-small btn-danger', data: { confirm: I18n.t('messages.are_you_sure') } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

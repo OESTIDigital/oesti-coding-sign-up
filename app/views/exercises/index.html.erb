@@ -5,7 +5,6 @@
   <thead>
     <tr>
       <th><%= I18n.t('helpers.label.exercise.title') %></th>
-      <th><%= I18n.t('helpers.label.exercise.text') %></th>
       <th class="actions"></th>
     </tr>
   </thead>
@@ -14,7 +13,6 @@
     <% @exercises.each do |exercise| %>
       <tr>
         <td><%= exercise.title %></td>
-        <td><%= exercise.text %></td>
         <td>
           <div class="btn-group">
             <%= link_to I18n.t('actions.show'), exercise, class: 'btn btn-small btn-default' %>

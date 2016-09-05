@@ -19,13 +19,26 @@ pt-BR:
       exercise:
         title: 'Título'
         text: 'Texto'
+      user:
+        name: 'Nome'
+        email: 'E-mail'
+        password: 'Senha'
+        password_confirmation: 'Confirmação da senha'
 
   activerecord:
     models:
       exercise:
         one: 'Exercício'
         other: 'Exercícios'
+      user:
+        one: 'Usuário'
+        other: 'Usuários'
     attributes:
       exercise:
         title: 'Título'
         text: 'Texto'
+      user:
+        name: 'Nome'
+        email: 'E-mail'
+        password: 'Senha'
+        password_confirmation: 'Confirmação da senha'

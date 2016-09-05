@@ -1,0 +1,9 @@
+<header id="page-header">
+  <div class="title">
+    <h1><%= User.model_name.human(count: 2) %></h1>
+  </div>
+  <div class="actions">
+    <%= link_to I18n.t('actions.new'), new_user_path, class: 'btn btn-default' %>
+    <%= link_to I18n.t('actions.list'), users_path, class: 'btn btn-default' %>
+  </div>
+</header>
