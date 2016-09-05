@@ -1,7 +1,7 @@
 <%= render 'page_header' %>
 <%= render 'application/messages' %>
 
-<%= form_for(@exercise) do |f| %>
+<%= form_for [:admin, @exercise] do |f| %>
 	<div class="form-group">
     <%= f.label :title %>
 	  <p class="form-control-static"><%= @exercise.title %></p>

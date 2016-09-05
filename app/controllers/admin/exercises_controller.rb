@@ -1,4 +1,4 @@
-class ExercisesController < ApplicationAdminController
+class Admin::ExercisesController < AdminController
   before_action :set_exercise, only: [:show, :edit, :update, :destroy]
 
   # GET /exercises
@@ -28,7 +28,7 @@ class ExercisesController < ApplicationAdminController
 
     respond_to do |format|
       if @exercise.save
-        format.html { redirect_to @exercise, notice: I18n.t('messages.create_success', :model => Exercise.model_name.human) }
+        format.html { redirect_to [:admin, @exercise], notice: I18n.t('messages.create_success', :model => Exercise.model_name.human) }
         format.json { render :show, status: :created, location: @exercise }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class ExercisesController < ApplicationAdminController
   def update
     respond_to do |format|
       if @exercise.update(exercise_params)
-        format.html { redirect_to @exercise, notice: I18n.t('messages.update_success', :model => Exercise.model_name.human) }
+        format.html { redirect_to [:admin, @exercise], notice: I18n.t('messages.update_success', :model => Exercise.model_name.human) }
         format.json { render :show, status: :ok, location: @exercise }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class ExercisesController < ApplicationAdminController
   def destroy
     @exercise.destroy
     respond_to do |format|
-      format.html { redirect_to exercises_url, notice: I18n.t('messages.destroy_success', :model => Exercise.model_name.human) }
+      format.html { redirect_to admin_exercises_url, notice: I18n.t('messages.destroy_success', :model => Exercise.model_name.human) }
       format.json { head :no_content }
     end
   end

@@ -1,5 +1,6 @@
 en:
   actions:
+    profile: 'Profile'
     list: 'List'
     new: 'New'
     show: 'Show'
@@ -7,9 +8,13 @@ en:
     destroy: 'Destroy'
     save: 'Save'
     back: 'Back'
+    send: 'Send'
 
   messages:
     are_you_sure: 'Are you sure?'
-    create_success: 'was successfully created.'
-    update_success: 'was successfully updated.'
-    destroy_success: 'was successfully destroyed.'
+    create_success: '%{model} was successfully created.'
+    update_success: '%{model} was successfully updated.'
+    destroy_success: '%{model} was successfully destroyed.'
+    login_success: 'Login successful.'
+    login_error: 'E-mail or password incorrect.'
+    logout_success: 'Logout successful.'

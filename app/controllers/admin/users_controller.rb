@@ -1,10 +1,10 @@
-class UsersController < ApplicationAdminController
+class Admin::UsersController < AdminController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
+    @users = User.all_except current_user
   end
 
   # GET /users/1
@@ -28,7 +28,7 @@ class UsersController < ApplicationAdminController
 
     respond_to do |format|
       if @user.save
-        format.html { redirect_to @user, notice: I18n.t('messages.create_success', :model => User.model_name.human) }
+        format.html { redirect_to [:admin, @user], notice: I18n.t('messages.create_success', :model => User.model_name.human) }
         format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class UsersController < ApplicationAdminController
   def update
     respond_to do |format|
       if @user.update(user_params)
-        format.html { redirect_to @user, notice: I18n.t('messages.update_success', :model => User.model_name.human) }
+        format.html { redirect_to [:admin, @user], notice: I18n.t('messages.update_success', :model => User.model_name.human) }
         format.json { render :show, status: :ok, location: @user }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class UsersController < ApplicationAdminController
   def destroy
     @user.destroy
     respond_to do |format|
-      format.html { redirect_to users_url, notice: I18n.t('messages.destroy_success', :model => User.model_name.human) }
+      format.html { redirect_to admin_users_url, notice: I18n.t('messages.destroy_success', :model => User.model_name.human) }
       format.json { head :no_content }
     end
   end

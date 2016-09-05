@@ -1,7 +1,7 @@
 <%= render 'page_header' %>
 <%= render 'application/messages' %>
 
-<%= form_for(@user) do |f| %>
+<%= form_for [:admin, @user] do |f| %>
 	<div class="form-group">
 		<%= f.label :name %>
 		<p class="form-control-static"><%= @user.name %></p>

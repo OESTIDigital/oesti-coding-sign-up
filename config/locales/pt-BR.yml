@@ -1,5 +1,6 @@
 pt-BR:
   actions:
+    profile: 'Perfil'
     list: 'Listar'
     new: 'Novo'
     show: 'Exibir'
@@ -7,12 +8,16 @@ pt-BR:
     destroy: 'Excluir'
     save: 'Salvar'
     back: 'Voltar'
+    send: 'Enviar'
 
   messages:
     are_you_sure: 'Tem certeza?'
     create_success: '%{model} criado com sucesso.'
     update_success: "%{model} alterado com sucesso."
     destroy_success: '%{model} excluído com sucesso.'
+    login_success: 'Login efetuado com sucesso.'
+    login_error: 'E-mail ou senha inválidos.'
+    logout_success: 'Logout efetuado com sucesso.'
       
   helpers:
     label:
