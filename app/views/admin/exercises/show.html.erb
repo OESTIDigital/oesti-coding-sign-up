@@ -9,6 +9,6 @@
 
 	<div class="form-group">
     <%= f.label :text %>
-	  <p class="form-control-static"><%= @exercise.text %></p>
+	  <%= simple_format @exercise.text, class: 'form-control-static' %>
 	</div>
 <% end %>

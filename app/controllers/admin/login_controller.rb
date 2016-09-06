@@ -1,5 +1,4 @@
 class Admin::LoginController < AdminController
-
 	def new
 		@user = User.new()
 	end
@@ -24,5 +23,4 @@ class Admin::LoginController < AdminController
     def login_params
       params.require(:user).permit(:email, :password)
     end
-
 end

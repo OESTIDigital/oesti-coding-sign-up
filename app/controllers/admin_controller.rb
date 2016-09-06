@@ -1,10 +1,8 @@
 class AdminController < ApplicationController
-
   layout 'admin'
   before_filter :authorize
 
-	private
-	
+  private
     def login_page?
       route_for? admin_login_path
     end
@@ -17,5 +15,4 @@ class AdminController < ApplicationController
     def authorize
       redirect_to admin_login_path unless login_page? or current_user
     end
-
 end

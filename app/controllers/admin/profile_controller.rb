@@ -8,7 +8,7 @@ class Admin::ProfileController < AdminController
     if @user.update(user_params)
       redirect_to admin_profile_url, notice: I18n.t('messages.update_success', :model => User.model_name.human)
     else
-      render :edit 
+      render :edit
     end
   end
 

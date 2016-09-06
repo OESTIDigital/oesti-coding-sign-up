@@ -33,6 +33,10 @@
             <li <% if route_for? admin_users_path %>class="active"<% end %>>
               <%= link_to User.model_name.human(count: 2), admin_users_path %>
             </li>
+
+            <li <% if route_for? admin_teams_path %>class="active"<% end %>>
+              <%= link_to Team.model_name.human(count: 2), admin_teams_path %>
+            </li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
@@ -53,7 +57,7 @@
         </div>
       <% end %>
     </nav>
-  	
+
   	<div class="container">
     	<%= yield %>
     </div>

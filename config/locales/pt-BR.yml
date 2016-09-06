@@ -29,6 +29,9 @@ pt-BR:
         email: 'E-mail'
         password: 'Senha'
         password_confirmation: 'Confirmação da senha'
+      team:
+        name: 'Nome'
+        members: 'Membros'
 
   activerecord:
     models:
@@ -38,6 +41,9 @@ pt-BR:
       user:
         one: 'Usuário'
         other: 'Usuários'
+      team:
+        one: 'Time'
+        other: 'Times'
     attributes:
       exercise:
         title: 'Título'
@@ -47,3 +53,6 @@ pt-BR:
         email: 'E-mail'
         password: 'Senha'
         password_confirmation: 'Confirmação da senha'
+      team:
+        name: 'Nome'
+        members: 'Membros'
