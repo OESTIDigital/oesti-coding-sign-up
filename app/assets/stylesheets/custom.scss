@@ -3,8 +3,10 @@ body {
 }
 
 .navbar {
-	.navbar-nav.navbar-right {
-		margin-right: 15px;
+	@media(min-width: 768px) {
+		.navbar-nav.navbar-right {
+			margin-right: 15px;
+		}
 	}
 }
 
@@ -31,5 +33,11 @@ body {
 .table {
 	th.actions {
 		width: 30%;
+	}
+}
+
+form {
+	label {
+		color: #686868;
 	}
 }
