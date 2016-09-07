@@ -1,3 +1,4 @@
 class Team < ApplicationRecord
-  validates :name, presence: true
+  has_secure_password
+  validates :name, :login, presence: true
 end

@@ -44,6 +44,6 @@ class Admin::TeamsController < AdminController
     end
 
     def team_params
-      params.require(:team).permit(:name, :members)
+      params.require(:team).permit(:name, :login, :password, :password_confirmation, :members)
     end
 end

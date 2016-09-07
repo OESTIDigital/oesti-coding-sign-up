@@ -2,10 +2,15 @@
 <%= render 'application/messages' %>
 
 <%= form_for [:admin, @team] do |f| %>
-	<div class="form-group">
+  <div class="form-group">
     <%= f.label :name %>
-	  <p class="form-control-static"><%= @team.name %></p>
-	</div>
+    <p class="form-control-static"><%= @team.name %></p>
+  </div>
+
+  <div class="form-group">
+    <%= f.label :login %>
+    <p class="form-control-static"><%= @team.login %></p>
+  </div>
 
 	<div class="form-group">
     <%= f.label :members %>
