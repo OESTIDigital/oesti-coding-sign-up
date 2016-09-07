@@ -1,20 +1,17 @@
-<div class="well">
-  <div class="col-sm-6 col-md-4 col-sm-offset-3 col-md-offset-4">
-    <%= form_for [:admin, user], :url => admin_login_path do |f| %>
-      <%= render 'application/messages', errors: user.errors %>
+<div class="panel">
+  <%= form_for [:admin, user], :url => admin_login_path do |f| %>
+    <div class="form-group">
+      <%= f.label :email %>
+      <%= f.email_field :email, class: "form-control", :required => true %>
+    </div>
 
-      <div class="form-group">
-        <%= f.label :email %>
-        <%= f.email_field :email, class: "form-control", :required => true %>
-      </div>
+    <div class="form-group">
+      <%= f.label :password %>
+      <%= f.password_field :password, class: "form-control" %>
+    </div>
 
-      <div class="form-group">
-        <%= f.label :password %>
-        <%= f.password_field :password, class: "form-control" %>
-      </div>
+    <%= render 'application/messages', errors: user.errors %>
 
-      <%= f.submit I18n.t('actions.send'), class: "btn btn-success" %>
-    <% end %>
-  </div>
-  <div class="clearfix"></div>
+    <%= f.submit I18n.t('actions.send'), class: "btn btn-block btn-success" %>
+  <% end %>
 </div>

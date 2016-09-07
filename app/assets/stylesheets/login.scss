@@ -1,0 +1,46 @@
+body.login {
+	background-color: #f8f8f8;
+
+	.logo-header {
+		padding-top: 35px;
+		padding-bottom: 15px;
+		text-align: center;
+
+		svg {
+			fill: #333;
+		}
+	}
+
+	.signin-header {
+		margin-bottom: 20px;
+	    color: #444;
+	    text-align: center;
+
+		h1 {
+			font-size: 24px;
+		    font-weight: 300;
+		    letter-spacing: -0.5px;
+		    margin: 0px;
+		}
+	}
+
+	.panel {
+	    margin: 0 auto;
+		width: 340px;
+		max-width: 100%;
+		border-radius: 5px;
+		padding: 20px;
+	    border: 1px solid #e7e7e7;
+
+	    .alert {
+	    	margin-bottom: 15px;
+	    }
+
+	    form {
+	    	label {
+	    		color: #333;
+	    		font-weight: normal;
+	    	}
+	    }
+	}
+}

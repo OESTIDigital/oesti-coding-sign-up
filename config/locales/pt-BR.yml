@@ -1,5 +1,6 @@
 pt-BR:
   actions:
+    signin_oesticoding: 'Entrar no Oesti Coding'
     profile: 'Perfil'
     list: 'Listar'
     new: 'Novo'
@@ -31,6 +32,9 @@ pt-BR:
         password_confirmation: 'Confirmação da senha'
       team:
         name: 'Nome'
+        login: 'Login'
+        password: 'Senha'
+        password_confirmation: 'Confirmação da senha'
         members: 'Membros'
 
   activerecord:
@@ -55,4 +59,7 @@ pt-BR:
         password_confirmation: 'Confirmação da senha'
       team:
         name: 'Nome'
+        login: 'Login'
+        password: 'Senha'
+        password_confirmation: 'Confirmação da senha'
         members: 'Membros'

@@ -1,14 +1,6 @@
 en:
   actions:
-    profile: 'Profile'
-    list: 'List'
-    new: 'New'
-    show: 'Show'
-    edit: 'Edit'
-    destroy: 'Destroy'
-    save: 'Save'
-    back: 'Back'
-    send: 'Send'
+    signin_oesticoding: 'Sign in to Oesti Coding'
 
   messages:
     are_you_sure: 'Are you sure?'

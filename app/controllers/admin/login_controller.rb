@@ -1,4 +1,6 @@
 class Admin::LoginController < AdminController
+  layout 'login'
+
 	def new
 		@user = User.new()
 	end

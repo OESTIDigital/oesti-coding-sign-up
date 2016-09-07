@@ -1,8 +1,21 @@
+* {
+	outline: none;
+}
+
+a, button, input[type="submit"] {
+	transition: .3s;
+}
+
 body {
 	color: #747474;
 }
 
-.navbar {
+.nav {
+	.navbar-toggle {
+		border: none;
+		background-color: transparent !important;
+	}
+
 	@media(min-width: 768px) {
 		.navbar-nav.navbar-right {
 			margin-right: 15px;
@@ -10,46 +23,75 @@ body {
 	}
 }
 
-#page-header {
-	margin-bottom: 25px;
+main {
+	padding-top: 20px;
+	min-height: 400px;
 
-	.title, .actions {
-		@media(min-width: 481px) {
-			display: inline-block;
+	#page-header {
+		margin-bottom: 25px;
+
+		.title, .actions {
+			@media(min-width: 481px) {
+				display: inline-block;
+			}
 		}
-	}
 
-	.title {
-		h1 {
-			font-size: 42px;
-			font-weight: 200;
+		.title {
+			h1 {
+				font-size: 42px;
+				color: #636363;
+				margin-top: 0px;
+			}
 		}
-	}
 
-	.actions {
-		@media(min-width: 481px) {
-			float: right;
-			margin-top: 30px;
-		}
-		@media(max-width: 480px) {
-			margin-top: 25px;
+		.actions {
+			@media(min-width: 481px) {
+				float: right;
+				margin-top: 30px;
+			}
+			@media(max-width: 480px) {
+				margin-top: 25px;
 
-			.btn {
-				display: block;
-				margin-top: 15px;
+				.btn {
+					display: block;
+					margin-top: 15px;
+				}
 			}
 		}
 	}
-}
 
-.table {
-	th.actions {
-		width: 30%;
+	.table {
+		th.actions {
+			width: 30%;
+		}
+	}
+
+	form {
+		label {
+			color: #686868;
+		}
 	}
 }
 
-form {
-	label {
-		color: #686868;
-	}
+footer {
+    padding-top: 15px;
+    margin-top: 40px;
+    border-top: 1px solid #e7e7e7;
+    text-align: center;
+
+    .links {
+    	margin-top: 5px;
+    	float: left;
+    	font-size: 12px;
+    	color: #aaa;
+    }
+
+    svg {
+		transition: .3s;
+    	fill: #ccc;
+
+    	&:hover {
+    		fill: #bbb;
+    	}
+    }
 }
