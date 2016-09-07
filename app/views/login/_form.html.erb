@@ -1,0 +1,17 @@
+<div class="panel">
+  <%= form_for team, :url => login_path do |f| %>
+    <div class="form-group">
+      <%= f.label :login %>
+      <%= f.text_field :login, class: "form-control", :required => true %>
+    </div>
+
+    <div class="form-group">
+      <%= f.label :password %>
+      <%= f.password_field :password, class: "form-control" %>
+    </div>
+
+    <%= render 'application/messages', errors: team.errors %>
+
+    <%= f.submit I18n.t('actions.send'), class: "btn btn-block btn-success" %>
+  <% end %>
+</div>

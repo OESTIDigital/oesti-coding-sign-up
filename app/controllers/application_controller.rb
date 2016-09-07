@@ -1,8 +1,17 @@
-class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception
-  helper_method :route_for?
+class ApplicationController < BaseController
+  before_filter :authorize
 
-  def route_for?(path)
-  	request.original_url.include? path
-  end
+  private
+    def login_page?
+      route_for? login_path
+    end
+
+    def current_team
+      @current_team ||= Team.find(session[:team_id]) if session[:team_id]
+    end
+    helper_method :current_team
+
+    def authorize
+      redirect_to login_path unless login_page? or current_team
+    end
 end

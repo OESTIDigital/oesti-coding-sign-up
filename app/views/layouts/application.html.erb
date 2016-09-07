@@ -10,13 +10,53 @@
 
   <body>
     <nav class="navbar navbar-default" role="navigation">
-      <a class="navbar-brand" href="<%= root_url %>">
-        <b>OESTI</b> Digital
-      </a>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="<%= root_url %>">
+          <b>OESTI</b> Digital
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <%= current_team.name %> <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <%= link_to I18n.t('actions.profile'), profile_path %>
+              </li>
+              <li>
+                <%= link_to 'Logout', logout_path, data: { confirm: I18n.t('messages.are_you_sure') } %>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </nav>
 
-  	<div class="container">
+  	<main class="container">
     	<%= yield %>
-    </div>
+    </main>
+
+    <footer class="container">
+      <ul class="list-unstyled links">
+        <li>&copy; <%= Time.now.year %> OESTI Digital</li>
+      </ul>
+
+      <a href="http://www.oestidigital.com.br" target="_blank">
+        <!-- logo svg -->
+      </a>
+    </footer>
   </body>
 </html>
