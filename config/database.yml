@@ -12,8 +12,5 @@ test:
   database: db/test.sqlite3
 
 production:
-  adapter: postgresql
-  host: <%= ENV['RAILS_DB_HOST'] %>
-  username: <%= ENV['RAILS_DB_USER'] %>
-  password: <%= ENV['RAILS_DB_PWD'] %>
-  database: <%= ENV['RAILS_DB_NAME'] %>
+  url:  <%= ENV["DATABASE_URL"] %>
+  pool: <%= ENV["DB_POOL"] || ENV['RAILS_MAX_THREADS'] || 5 %>
