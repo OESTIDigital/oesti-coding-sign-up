@@ -36,6 +36,8 @@ pt-BR:
         password: 'Senha'
         password_confirmation: 'Confirmação da senha'
         members: 'Membros'
+      category:
+        name: 'Nome'
 
   activerecord:
     models:
@@ -48,6 +50,9 @@ pt-BR:
       team:
         one: 'Time'
         other: 'Times'
+      category:
+        one: 'Categoria'
+        other: 'Categorias'
     attributes:
       exercise:
         title: 'Título'
@@ -63,3 +68,5 @@ pt-BR:
         password: 'Senha'
         password_confirmation: 'Confirmação da senha'
         members: 'Membros'
+      category:
+        name: 'Nome'

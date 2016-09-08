@@ -1,0 +1,9 @@
+<%= render 'page_header' %>
+<%= render 'application/messages' %>
+
+<%= form_for [:admin, @category] do |f| %>
+  <div class="form-group">
+    <%= f.label :name %>
+    <p class="form-control-static"><%= @category.name %></p>
+  </div>
+<% end %>

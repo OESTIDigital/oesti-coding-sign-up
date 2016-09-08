@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 	  resources :users
 	  resources :exercises
   	resources :teams
+    resources :categories
 
 	  root 'index#index'
 	end

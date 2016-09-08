@@ -1,0 +1,24 @@
+<%= render 'page_header' %>
+<%= render 'application/messages' %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th><%= I18n.t('helpers.label.category.name') %></th>
+      <th class="actions"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @categories.each do |category| %>
+      <tr>
+        <td><%= category.name %></td>
+        <td>
+          <%= link_to I18n.t('actions.show'), [:admin, category], class: 'btn btn-small btn-default' %>
+          <%= link_to I18n.t('actions.edit'), edit_admin_category_path(category), class: 'btn btn-small btn-default' %>
+          <%= link_to I18n.t('actions.destroy'), [:admin, category], method: :delete, class: 'btn btn-small btn-danger', data: { confirm: I18n.t('messages.are_you_sure') } %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -1,0 +1,10 @@
+<%= form_for [:admin, category] do |f| %>
+  <%= render 'application/messages', errors: category.errors %>
+
+  <div class="form-group">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: "form-control", :required => true %>
+  </div>
+
+  <%= f.submit I18n.t('actions.save'), class: "btn btn-success" %>
+<% end %>
