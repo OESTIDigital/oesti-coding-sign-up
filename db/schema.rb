@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160908213200) do
+ActiveRecord::Schema.define(version: 20160908220809) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -32,6 +32,8 @@ ActiveRecord::Schema.define(version: 20160908213200) do
     t.datetime "updated_at",      null: false
     t.string   "login"
     t.string   "password_digest"
+    t.integer  "category_id"
+    t.index ["category_id"], name: "index_teams_on_category_id"
     t.index ["login"], name: "index_teams_on_login", unique: true
   end
 

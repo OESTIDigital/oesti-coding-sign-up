@@ -1,6 +1,15 @@
 <%= form_for team, :url => profile_path do |f| %>
   <%= render 'application/messages', errors: team.errors %>
 
+  <hr>
+  <div class="form-group">
+    <p class="form-control-static">
+      <b><%= I18n.t('helpers.label.team.category_id') %>:</b>
+      <%= @team.category.name %>
+    </p>
+  </div>
+  <hr>
+
   <div class="form-group">
     <%= f.label :name %>
     <%= f.text_field :name, class: "form-control", :required => true %>

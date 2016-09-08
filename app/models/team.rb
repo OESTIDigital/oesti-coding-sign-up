@@ -1,4 +1,6 @@
 class Team < ApplicationRecord
+  belongs_to :category
+
   has_secure_password
 
   validates :name, presence: true

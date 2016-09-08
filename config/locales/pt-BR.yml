@@ -36,6 +36,7 @@ pt-BR:
         password: 'Senha'
         password_confirmation: 'Confirmação da senha'
         members: 'Membros'
+        category_id: 'Categoria'
       category:
         name: 'Nome'
 
@@ -68,5 +69,12 @@ pt-BR:
         password: 'Senha'
         password_confirmation: 'Confirmação da senha'
         members: 'Membros'
+        category: 'Categoria'
       category:
         name: 'Nome'
+    errors:
+      models:
+        team:
+          attributes:
+            category:
+              required: ' é obrigatório'
