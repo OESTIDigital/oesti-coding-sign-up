@@ -49,7 +49,7 @@ Os times poderão se  inscrever para em (1) uma das seguintes categorias:
 - Só poderão competir as equipes que chegarem até as 9:45h.
 
 ## Envio do código (Resoluções)
-O código de todos os desafios deverão ser postados até as 12:30h do dia 17 de setembro por meio do link: **http://oestecoding.oestidigital.com.br**
+O código de todos os desafios deverão ser postados até as 12:30h do dia 17 de setembro por meio do link: **https://oesticoding.herokuapp.com**
 
 ## Inscrição
 **Valor de inscrição:** R$ 20,00 (por equipe) + R$ 2,00 por integrante, *para o café que será disponibilizado durante o evento.*
@@ -61,4 +61,4 @@ A divulgação dos ganhadores e a premiação será realizada no terceiro evento
 
 *A premiação ainda está sendo definida*
 
-# [Inscreva-se](http://oestecoding.oestidigital.com.br)
+# [Inscreva-se](https://oesticoding.herokuapp.com)
