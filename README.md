@@ -10,9 +10,12 @@ O grupo OESTI DIGITAL surgiu para promover e fomentar a área de TI na região O
 ## O evento OESTI Coding
 O 1° OESTI Coding será o segundo evento promovido pelo OESTI Digital.
 
-**Data:** 17 de setembro de 2016 (Sábado)\
-**Horário:** 9:30h às 12:30h\
-**Local:** Auditório da UNOESC\
+**Data:** 17 de setembro de 2016 (Sábado)
+
+**Horário:** 9:30h às 12:30h
+
+**Local:** Auditório da UNOESC
+
 **Realização dos desafios:** Laboratório de Informática UNOESC
 
 ## Como vai funcionar?
