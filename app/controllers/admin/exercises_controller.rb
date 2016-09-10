@@ -19,7 +19,7 @@ class Admin::ExercisesController < AdminController
     @exercise = Exercise.new(exercise_params)
 
     if @exercise.save
-      edirect_to [:admin, @exercise], notice: I18n.t('messages.create_success', :model => Exercise.model_name.human)
+      redirect_to [:admin, @exercise], notice: I18n.t('messages.create_success', :model => Exercise.model_name.human)
     else
       render :new
     end

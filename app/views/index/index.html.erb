@@ -1,1 +1,9 @@
 <%= render 'application/messages' %>
+
+<% if current_config.active? %>
+Está ativo
+<% else %>
+  <div class="alert alert-info">
+    Os exercícios estarão disponíveis a partir de <b><%= l current_config.start_time, format: :short %></b>
+  </div>
+<% end %>

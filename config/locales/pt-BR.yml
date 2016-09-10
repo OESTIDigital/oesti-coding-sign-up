@@ -44,6 +44,10 @@ pt-BR:
         category_id: 'Categoria'
       category:
         name: 'Nome'
+      config:
+        date: 'Data'
+        start_time: 'Início'
+        end_time: 'Fim'
 
   activerecord:
     models:
@@ -59,6 +63,9 @@ pt-BR:
       category:
         one: 'Categoria'
         other: 'Categorias'
+      config:
+        one: 'Configuração'
+        other: 'Configurações'
     attributes:
       exercise:
         title: 'Título'
@@ -77,6 +84,10 @@ pt-BR:
         category: 'Categoria'
       category:
         name: 'Nome'
+      config:
+        date: 'Data'
+        start_time: 'Início'
+        end_time: 'Fim'
     errors:
       models:
         team:

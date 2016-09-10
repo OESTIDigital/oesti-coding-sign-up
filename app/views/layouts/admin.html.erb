@@ -40,6 +40,10 @@
           <li <% if route_for? admin_users_path %>class="active"<% end %>>
             <%= link_to User.model_name.human(count: 2), admin_users_path %>
           </li>
+
+          <li <% if route_for? admin_config_path %>class="active"<% end %>>
+            <%= link_to Config.model_name.human(count: 2), admin_config_path %>
+          </li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">

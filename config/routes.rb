@@ -4,8 +4,11 @@ Rails.application.routes.draw do
 	  post '/login' => 'login#create'
 	  get '/logout' => 'login#destroy'
 
-	  get '/profile' => 'profile#edit'
-	  patch '/profile' => 'profile#update'
+    get '/profile' => 'profile#edit'
+    patch '/profile' => 'profile#update'
+
+    get '/config' => 'config#edit'
+    patch '/config' => 'config#update'
 
 	  resources :users
 	  resources :exercises
