@@ -19,6 +19,9 @@ Rails.application.routes.draw do
   post '/login' => 'login#create'
   get '/logout' => 'login#destroy'
 
+  get '/register' => 'register#new'
+  post '/register' => 'register#create'
+
   get '/profile' => 'profile#edit'
   patch '/profile' => 'profile#update'
 

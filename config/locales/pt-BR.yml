@@ -1,6 +1,8 @@
 pt-BR:
   actions:
     signin_oesticoding: 'Entrar no OESTI Coding'
+    signup_oesticoding: 'Cadastrar no OESTI Coding'
+    create_an_account: 'Criar uma conta'
     profile: 'Perfil'
     list: 'Listar'
     new: 'Novo'
@@ -12,6 +14,9 @@ pt-BR:
     send: 'Enviar'
 
   messages:
+    new_to_oesticoding: 'Novo por aqui?'
+    already_registered: 'Já está cadastrado?'
+    welcome: 'Bem vindos, %{name}.'
     are_you_sure: 'Tem certeza?'
     create_success: '%{model} criado com sucesso.'
     update_success: "%{model} alterado com sucesso."

@@ -11,7 +11,7 @@ body.login {
 		}
 	}
 
-	.signin-header {
+	.login-header {
 		margin-bottom: 25px;
 	    color: #444;
 	    text-align: center;
@@ -25,9 +25,6 @@ body.login {
 	}
 
 	.panel {
-	    margin: 0 auto;
-		width: 340px;
-		max-width: 100%;
 		border-radius: 5px;
 		padding: 20px;
 	    border: 1px solid #e7e7e7;
@@ -42,5 +39,51 @@ body.login {
 	    		font-weight: normal;
 	    	}
 	    }
+	}
+
+	.create-an-account {
+	    margin-top: 12px !important;
+	    padding: 15px 20px;
+	    text-align: center;
+	    border: 1px solid #e7e7e7;
+	    border-radius: 5px;
+	    color: #333;
+    }
+
+    .login-width {
+	    margin: 0 auto;
+		width: 340px;
+		max-width: 100%;
+    }
+
+    .register-width {
+	    margin: 0 auto;
+		width: 480px;
+		max-width: 100%;
+    }
+
+	.login-footer {
+	    position: relative;
+	    margin-top: 40px;
+	    font-size: 12px;
+	    line-height: 1.5;
+	    color: #767676;
+
+		ul {
+			text-align: center;
+		    margin: 0;
+		    padding: 0;
+		    list-style: none;
+
+			li {
+			    display: inline-block;
+			    line-height: 16px;
+			    margin: 0px 5px;
+
+			    a {
+			        color: #9b9b9b;
+			    }
+			}
+		}
 	}
 }

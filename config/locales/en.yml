@@ -1,8 +1,13 @@
 en:
   actions:
     signin_oesticoding: 'Sign in to OESTI Coding'
+    signup_oesticoding: 'Sign up to OESTI Coding'
+    create_an_account: 'Create an account'
 
   messages:
+    new_to_oesticoding: 'New to OESTI Coding?'
+    already_registered: 'Already registered?'
+    welcome: 'Welcome, %{name}.'
     are_you_sure: 'Are you sure?'
     create_success: '%{model} was successfully created.'
     update_success: '%{model} was successfully updated.'

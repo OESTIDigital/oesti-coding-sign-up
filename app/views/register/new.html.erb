@@ -3,14 +3,14 @@
 </div>
 
 <div class="login-header">
-  <h1><%= I18n.t('actions.signin_oesticoding') %></h1>
+  <h1><%= I18n.t('actions.signup_oesticoding') %></h1>
 </div>
 
 <%= render 'form', team: @team %>
 
-<p class="create-an-account login-width">
-  <%= I18n.t('messages.new_to_oesticoding') %>
-  <a href="<%= register_path %>"><%= I18n.t('actions.create_an_account') %></a>.
+<p class="create-an-account register-width">
+  <%= I18n.t('messages.already_registered') %>
+  <a href="<%= login_path %>">Login</a>.
 </p>
 
 <div class="login-footer">
