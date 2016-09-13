@@ -2,6 +2,21 @@
 <%= render 'application/messages' %>
 
 <%= form_for [:admin, @team] do |f| %>
+  <hr>
+  <div class="form-group">
+    <p class="form-control-static">
+      <b><%= I18n.t('messages.uploaded_files') %></b>
+      <% if @team.files.present? %>
+        <a href="<%= @team.files.url %>" class="label label-success"><%= I18n.t('yes') %></a>
+        <br>
+        <%= I18n.t('messages.sent_on') %> <%= l @team.files_updated_at, format: :short %>
+      <% else %>
+        <span class="label label-default"><%= I18n.t('no') %></span>
+      <% end %>
+    </p>
+  </div>
+  <hr>
+
   <div class="form-group">
     <%= f.label :name %>
     <p class="form-control-static"><%= @team.name %></p>

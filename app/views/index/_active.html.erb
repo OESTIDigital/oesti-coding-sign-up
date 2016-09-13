@@ -1,0 +1,16 @@
+<% if current_team.files.present? %>
+  <div class="alert alert-info">
+    <b><%= I18n.t('messages.already_sent_exercises') %></b>
+    <br>
+    <%= I18n.t('messages.sent_on') %> <%= l current_team.files_updated_at, format: :short %>
+  </div>
+<% else %>
+  <%= form_for current_team, :url => upload_path, html: { multipart: true } do |f| %>
+    <div class="form-group">
+      <%= f.label :files %>
+      <%= f.file_field :files, class: "form-control", :accept => "application/zip,application/octet-stream", :required => true %>
+    </div>
+
+    <%= f.submit I18n.t('actions.send'), class: "btn btn-success" %>
+  <% end %>
+<% end %>

@@ -1,4 +1,7 @@
 pt-BR:
+  'yes': 'Sim'
+  'no': 'Não'
+
   actions:
     signin_oesticoding: 'Entrar no OESTI Coding'
     signup_oesticoding: 'Cadastrar no OESTI Coding'
@@ -24,6 +27,12 @@ pt-BR:
     login_success: 'Login efetuado com sucesso.'
     login_error: 'E-mail ou senha inválidos.'
     logout_success: 'Logout efetuado com sucesso.'
+    exercises_will_be_available_on: 'Os exercícios estarão disponíveis em'
+    sent_on: 'Enviado em'
+    uploaded_files: 'Enviou os arquivos?'
+    upload_success: 'Arquivos enviados com sucesso.'
+    upload_error: 'Erro ao enviar arquivos.'
+    already_sent_exercises: 'Você já enviou os arquivos.'
       
   helpers:
     label:
@@ -42,6 +51,7 @@ pt-BR:
         password_confirmation: 'Confirmação da senha'
         members: 'Membros'
         category_id: 'Categoria'
+        files: 'Arquivos'
       category:
         name: 'Nome'
       config:
@@ -82,6 +92,7 @@ pt-BR:
         password_confirmation: 'Confirmação da senha'
         members: 'Membros'
         category: 'Categoria'
+        files: 'Arquivos'
       category:
         name: 'Nome'
       config:

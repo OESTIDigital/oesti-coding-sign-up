@@ -28,5 +28,7 @@ Rails.application.routes.draw do
   get '/profile' => 'profile#edit'
   patch '/profile' => 'profile#update'
 
+  patch '/upload' => 'upload#upload'
+
 	root 'index#index'
 end
