@@ -1,3 +1,25 @@
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <% @exercises.each do |exercise| %>
+    <div class="panel panel-default">
+      <div class="panel-heading" role="tab" id="heading<%= exercise.id %>">
+        <h4 class="panel-title">
+          <a role="button" data-toggle="collapse" data-parent="#accordion"
+            href="#collapse<%= exercise.id %>" aria-expanded="true"
+            aria-controls="collapse<%= exercise.id %>">
+            <%= exercise.title %>
+          </a>
+        </h4>
+      </div>
+      <div id="collapse<%= exercise.id %>" class="panel-collapse collapse"
+        role="tabpanel" aria-labelledby="heading<%= exercise.id %>">
+        <div class="panel-body">
+          <%= simple_format exercise.text %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
 <% if current_team.files.present? %>
   <div class="alert alert-info">
     <b><%= I18n.t('messages.already_sent_exercises') %></b>
