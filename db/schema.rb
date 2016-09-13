@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160910123348) do
+ActiveRecord::Schema.define(version: 20160912223130) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -33,11 +33,15 @@ ActiveRecord::Schema.define(version: 20160910123348) do
   create_table "teams", force: :cascade do |t|
     t.string   "name"
     t.text     "members"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
     t.string   "login"
     t.string   "password_digest"
     t.integer  "category_id"
+    t.string   "files_file_name"
+    t.string   "files_content_type"
+    t.integer  "files_file_size"
+    t.datetime "files_updated_at"
     t.index ["category_id"], name: "index_teams_on_category_id"
     t.index ["login"], name: "index_teams_on_login", unique: true
   end
