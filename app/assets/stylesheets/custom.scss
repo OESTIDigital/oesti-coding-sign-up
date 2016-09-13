@@ -78,12 +78,27 @@ footer {
     margin-top: 40px;
     border-top: 1px solid #e7e7e7;
 
+    .time {
+		@media(min-width: 481px) {
+			float: left;
+		}
+		@media(max-width: 480px) {
+			text-align: center;
+		}
+
+		color: #bababa;
+    }
+
     .brand {
 		@media(min-width: 481px) {
 			float: right;
 		}
+		@media(max-width: 480px) {
+			text-align: center;
+		}
 
     	transition: .3s;
+    	display: block;
     	color: #bfbfbf;
     	text-decoration: none;
 
